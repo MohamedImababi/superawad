@@ -1,0 +1,24 @@
+<html>
+<title>Login</title>
+<body background="red">
+<h1 style="font-family:Comic Sans Ms ;text-align="center";font-siza:20pt;color:"pink";>
+LOGIN PAGE </h1>
+<form name="My Form"action="Login">
+User Name  <input type="text"name="username">
+<br><br>Password    <input type="password"name="password">
+<br><br>
+<input type="button"onclick="check(this.form)"value="login">
+</form>
+<script language="javascript">
+function check(form){
+if(form.username.value=="Mohamed Awad"&&form.password.value=="mypassword")
+{
+window.open('login2.html')
+}
+else{
+alert("Error , please check your User Name or Your Password") 
+}
+}
+</script>
+</body>
+</html>
